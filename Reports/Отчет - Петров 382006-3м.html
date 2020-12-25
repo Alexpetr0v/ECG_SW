@@ -13197,7 +13197,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>С помощью функции <code>load_raw_data</code> и модуля <em>wfdb</em> загрузим данные сигнала в виде numpy.array и сохраним в <em>X</em>. В <em>Y</em> будем хранить набор данных PTB-XL.
-С помощью функции aggregate_diagnostic достанем из класса <em>scp_codes</em>, который представлен в виде словаря, список суперклассов.</p>
+С помощью функции aggregate_diagnostic достанем из признака <em>scp_codes</em>, который представлен в виде словаря, список суперклассов.</p>
 
 </div>
 </div>
@@ -13956,7 +13956,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Заменим значения <code>nan</code> в классах <em>weight</em>, <em>height</em>, <em>age</em> на <code>-1</code>, а в классах <em>infarction_stadium1</em>, <em>infarction_stadium2</em>, на <code>Healthy</code>.</p>
+<p>Заменим значения <code>nan</code> в признаках <em>weight</em>, <em>height</em>, <em>age</em> на <code>-1</code>, а в признаках <em>infarction_stadium1</em>, <em>infarction_stadium2</em>, на <code>Healthy</code>.</p>
 
 </div>
 </div>
@@ -14187,7 +14187,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Соединим две таблицы с данными сигнала и данными о пациентах, чтобы добавить классы <em>age</em>, <em>sex</em>, <em>height</em>, <em>weight</em>.</p>
+<p>Соединим две таблицы с данными сигнала и данными о пациентах, чтобы добавить признаки <em>age</em>, <em>sex</em>, <em>height</em>, <em>weight</em>.</p>
 
 </div>
 </div>
@@ -14955,7 +14955,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Изначально данные разделены на 10 групп. Разделим данные на тренировочный и тестовый набор по классу <code>strat_fold</code>.</p>
+<p>Изначально данные разделены на 10 групп. Разделим данные на тренировочный и тестовый набор по признаку <code>strat_fold</code>.</p>
 
 </div>
 </div>
@@ -15686,19 +15686,6 @@ Epoch 40/40
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
